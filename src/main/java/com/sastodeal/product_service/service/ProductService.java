@@ -28,7 +28,7 @@ public class ProductService {
                 .price(productRequest.getPrice())
                 .build();
         productRepository.save(product);
-        log.info("Product {} created successfully",product.getId());
+        log.info("Product {} created successfully.",product.getId());
   ;  }
 
     public ResponseEntity<List<ProductResponse>> getAllProducts() {
